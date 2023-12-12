@@ -1,0 +1,116 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+}
+
+.albums {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+.albums .taylorSwift, .albums .fearless, .albums .speakNow, .albums .red, .albums .nineteenEightyNine, .albums .reputation, .albums .lover, .albums .folklore, .albums .evermore, .albums .fearlessTV, .albums .redTV, .albums .midnights, .albums .speakNowTV, .albums .nineteenEightyNineTV {
+  height: 3rem;
+}
+.albums .nineteenEightyNineTV {
+  background-color: #aedefe;
+}
+.albums .speakNowTV {
+  background-color: #8c7cf1;
+}
+.albums .midnights {
+  background-color: #0f1e7e;
+}
+.albums .redTV {
+  background-color: #db2323;
+}
+.albums .fearlessTV {
+  background-color: #ffd771;
+}
+.albums .evermore {
+  background-color: #c47f2b;
+}
+.albums .folklore {
+  background-color: #c0d2ca;
+}
+.albums .lover {
+  background-color: #e0bdeb;
+}
+.albums .reputation {
+  background-color: #09251f;
+}
+.albums .nineteenEightyNine {
+  background-color: #77a7ff;
+}
+.albums .red {
+  background-color: #fc4456;
+}
+.albums .speakNow {
+  background-color: #be81ed;
+}
+.albums .fearless {
+  background-color: #ffc906;
+}
+.albums .taylorSwift {
+  background-color: #6cebfb;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.noise {
+  width: 100vw;
+  height: 200px;
+  background: linear-gradient(to top, rgb(235, 61, 183), transparent), url(https://grainy-gradients.vercel.app/noise.svg);
+  filter: contrast(900%) brightness(100%);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgb(34, 34, 142), #08021a);
+  position: relative;
+  width: 100vw;
+  height: 900px;
+}
+
+.noise-circle {
+  margin-top: -10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at 50% 50%, rgb(12, 12, 12), rgba(0, 0, 0, 0)), url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  filter: contrast(145%) brightness(650%) invert(100%);
+  mix-blend-mode: screen;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) and (-webkit-min-device-pixel-ratio: 0), all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .noise {
+    filter: contrast(125%) brightness(650%) invert(100%);
+    mix-blend-mode: color-dodge;
+  }
+}
+.center {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+}/*# sourceMappingURL=styles.css.map */

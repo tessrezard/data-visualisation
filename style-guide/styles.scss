@@ -1,0 +1,177 @@
+
+$color-nineteenEightyNineTV: #aedefe;
+$color-speakNowTV: #8c7cf1;
+$color-midnights: #0f1e7e;
+$color-redTV: #db2323;
+$color-fearlessTV: #ffd771;
+$color-evermore: #c47f2b;
+$color-folklore: #c0d2ca;
+$color-lover: #e0bdeb;
+$color-reputation: #09251f;
+$color-nineteenEightyNine: #77a7ff;
+$color-red: #fc4456;
+$color-speakNow: #be81ed;
+$color-fearless: #ffc906;
+$color-taylorSwift: #6cebfb;
+
+html {
+    font-size: 16px;
+}
+body {
+    display: flex;
+    flex-flow: column;
+}
+
+.albums {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+
+
+    %album {
+        height: 3rem;
+    }
+
+    .nineteenEightyNineTV {
+        @extend %album;
+        background-color: $color-nineteenEightyNineTV;
+    }
+
+    .speakNowTV {
+        @extend %album;
+        background-color: $color-speakNowTV;
+    }
+
+    .midnights {
+        @extend %album;
+        background-color: $color-midnights;
+    }
+
+    .redTV {
+        @extend %album;
+        background-color: $color-redTV;
+    }
+
+    .fearlessTV {
+        @extend %album;
+        background-color: $color-fearlessTV;
+    }
+
+    .evermore {
+        @extend %album;
+        background-color: $color-evermore;
+    }
+
+    .folklore {
+        @extend %album;
+        background-color: $color-folklore;
+    }
+
+    .lover {
+        @extend %album;
+        background-color: $color-lover;
+    }
+
+    .reputation {
+        @extend %album;
+        background-color: $color-reputation;
+    }
+
+    .nineteenEightyNine {
+        @extend %album;
+        background-color: $color-nineteenEightyNine;
+    }
+
+    .red {
+        @extend %album;
+        background-color: $color-red;
+    }
+
+    .speakNow {
+        @extend %album;
+        background-color: $color-speakNow;
+    }
+
+    .fearless {
+        @extend %album;
+        background-color: $color-fearless;
+    }
+
+    .taylorSwift {
+        @extend %album;
+        background-color: $color-taylorSwift;
+    }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+// Define your Sass variables
+$noise-width: 100vw;
+$noise-height: 200px;
+$noise-gradient: linear-gradient(to top, rgb(235, 61, 183), transparent);
+$noise-background-url: url(https://grainy-gradients.vercel.app/noise.svg);
+$noise-filter: contrast(900%) brightness(100%);
+
+// Use variables in your styles
+.noise {
+  width: $noise-width;
+  height: $noise-height;
+  background: $noise-gradient, $noise-background-url;
+  filter: $noise-filter;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgb(34, 34, 142), #08021a);
+    position: relative;
+    // top: -10vh;
+    width: 100vw;
+    height: 900px;
+  }
+  
+  .noise-circle {
+    margin-top: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(
+        circle at 50% 50%,
+        rgb(12, 12, 12),
+        rgba(0, 0, 0, 0)
+      ),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    filter: contrast(145%) brightness(650%) invert(100%);
+    mix-blend-mode: screen;
+  }
+  
+  @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .noise {
+      filter: contrast(125%) brightness(650%) invert(100%);
+      mix-blend-mode: color-dodge;
+    }
+  }
+  
+  .center {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+  }
+  
